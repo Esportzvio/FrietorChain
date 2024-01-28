@@ -8,7 +8,7 @@ import (
 
 	"github.com/esportzvio/frietorchain/command/helper"
 	"github.com/esportzvio/frietorchain/command/peers"
-	"github.com/esportzvio/frietorchain/command/secrets"
+	"github.com/esportzvio/frietorchain/command/polybftsecrets"
 	"github.com/esportzvio/frietorchain/command/server"
 	"github.com/esportzvio/frietorchain/command/status"
 	"github.com/esportzvio/frietorchain/command/version"
@@ -36,7 +36,7 @@ func (rc *RootCommand) registerSubCommands() {
 	rc.baseCmd.AddCommand(
 		version.GetCommand(),
 		status.GetCommand(),
-		secrets.GetCommand(),
+		polybftsecrets.GetCommand(),
 		peers.GetCommand(),
 		server.GetCommand(),
 	)

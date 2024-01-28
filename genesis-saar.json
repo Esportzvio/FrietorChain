@@ -77,7 +77,16 @@
         "balance": "0x0"
       },
       "0x2415d9F108049b8879f0cFE3aE4b39bb971Fa8f3": {
-        "balance": "0x3e8"
+        "balance": "0x19D971E4FE8401E74000000"
+      },
+      "0x0e774869B113DAa9FC76699291108143b9505626": {
+        "balance": "0x19D971E4FE8401E74000000"
+      },
+      "0xF27539c3E299DD4a5038627aDA2600816FBFDF08": {
+        "balance": "0x19D971E4FE8401E74000000"
+      },
+      "0xF37C65D1918d40a1EA5Df27CDCeD7693ae32CF75": {
+        "balance": "0xA56FA5B99019A5C8000000"
       }
     },
     "number": "0x0",
@@ -167,7 +176,7 @@
           "stakeTokenAddr": "0x6c59A268c1E196A092C1F91ad292137262dd77A8",
           "blsAddr": "0x5F33985b8A9D9E081D617E817525cdd0Eb6C6401",
           "bn256G2Addr": "0x41f13F530Fd636Db569c05AcFe7508D08D047E25",
-          "jsonRPCEndpoint": "https://sepolia.infura.io/v3/b8144f298dba4f2e87a0beeaa2c4a40b",
+          "jsonRPCEndpoint": "https://rpc2.sepolia.org",
           "eventTrackerStartBlocks": {
             "0x2178Aef7816450448c17817558d60B770e8272ad": 5153781
           }
@@ -191,7 +200,7 @@
         "rewardConfig": {
           "rewardTokenAddress": "0x0000000000000000000000000000000000001010",
           "rewardWalletAddress": "0x2415d9F108049b8879f0cFE3aE4b39bb971Fa8f3",
-          "rewardWalletAmount": "0x3e8"
+          "rewardWalletAmount": "0x0"
         },
         "blockTimeDrift": 10
       }

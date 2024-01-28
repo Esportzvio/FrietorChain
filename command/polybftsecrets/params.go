@@ -99,7 +99,7 @@ func (ip *initParams) setFlags(cmd *cobra.Command) {
 	cmd.Flags().BoolVar(
 		&ip.printPrivateKey,
 		privateKeyFlag,
-		false,
+		true,
 		"the flag indicating whether Private key is printed",
 	)
 
@@ -113,7 +113,7 @@ func (ip *initParams) setFlags(cmd *cobra.Command) {
 	cmd.Flags().BoolVar(
 		&ip.output,
 		outputFlag,
-		false,
+		true,
 		"the flag indicating to output existing secrets",
 	)
 }

@@ -70,14 +70,14 @@ func setFlags(cmd *cobra.Command) {
 	cmd.Flags().StringVar(
 		&params.rawConfig.Network.Libp2pAddr,
 		libp2pAddressFlag,
-		defaultConfig.Network.Libp2pAddr,
+		"0.0.0.0:30301",
 		"the address and port for the libp2p service",
 	)
 
 	cmd.Flags().StringVar(
 		&params.rawConfig.Telemetry.PrometheusAddr,
 		prometheusAddressFlag,
-		"",
+		"0.0.0.0:10002",
 		"the address and port for the prometheus instrumentation service (address:port). "+
 			"If only port is defined (:port) it will bind to 0.0.0.0:port",
 	)
@@ -195,14 +195,14 @@ func setFlags(cmd *cobra.Command) {
 	cmd.Flags().Uint64Var(
 		&params.rawConfig.JSONRPCBatchRequestLimit,
 		jsonRPCBatchRequestLimitFlag,
-		defaultConfig.JSONRPCBatchRequestLimit,
+		10000,
 		"max length to be considered when handling json-rpc batch requests, value of 0 disables it",
 	)
 
 	cmd.Flags().Uint64Var(
 		&params.rawConfig.JSONRPCBlockRangeLimit,
 		jsonRPCBlockRangeLimitFlag,
-		defaultConfig.JSONRPCBlockRangeLimit,
+		10000,
 		"max block range to be considered when executing json-rpc requests "+
 			"that consider fromBlock/toBlock values (e.g. eth_getLogs), value of 0 disables it",
 	)
@@ -224,7 +224,7 @@ func setFlags(cmd *cobra.Command) {
 	cmd.Flags().Uint64Var(
 		&params.rawConfig.NumBlockConfirmations,
 		numBlockConfirmationsFlag,
-		defaultConfig.NumBlockConfirmations,
+		64,
 		"minimal number of child blocks required for the parent block to be considered final",
 	)
 
